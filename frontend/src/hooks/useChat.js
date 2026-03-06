@@ -51,7 +51,7 @@ export function useChat() {
     dispatch({ type: "INIT_ASSISTANT_MESSAGE" });
 
     try {
-      const response = await fetch(`${import.meta.env.API_URL}/chat`, {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: updatedMessages })
