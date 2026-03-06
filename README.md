@@ -81,7 +81,7 @@ npm run dev
 
 Type a message in the chat input and press **Enter** (or click **Send**) to ask for music recommendations. Some example prompts:
 
-- *"What should I listen to for a late-night drive?"*
+- *"I like Tyler the creator, afro beats, jazz, and some bedroom pop. What kind of music might I like?"*
 - *"I love Radiohead and Bon Iver — what else might I enjoy?"*
 - *"Recommend a jazz album for someone who's never really listened to jazz."*
 - *"What's a good album to listen to front-to-back?"*
