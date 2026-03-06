@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'backend/**'     # only run if backend folder changed
+  workflow_dispatch:
 
 jobs:
   deploy:
