@@ -27,4 +27,7 @@ Resources:
 Outputs:
   ChatFunctionUrl:
     Description: "Chat Function URL"
-    Value: !GetAtt ChatFunctionUrl.FunctionUrl
+    Value:
+      Fn::GetAtt:
+        - ChatFunctionUrl
+        - FunctionUrl
