@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import ReactMarkdown from "react-markdown";
 import { useChat } from "../hooks/useChat";
 
 export default function ChatWindow() {
@@ -37,9 +38,9 @@ export default function ChatWindow() {
             }`}
           >
             <span className="text-[11px] font-semibold opacity-60 block mb-1 uppercase tracking-[0.05em]">
-              {msg.role === "user" ? "You" : "Claude"}
+              {msg.role === "user" ? "You" : "Auris"}
             </span>
-            <p>{msg.content}</p>
+            <div className={`prose prose-sm max-w-none ${msg.role === "user" ? "prose-invert" : ""}`}><ReactMarkdown>{msg.content}</ReactMarkdown></div>
           </div>
         ))}
         {state.error && (
